@@ -7,7 +7,7 @@
 ## Установка и запуск проекта
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/username/projectname.git
+   git clone https://github.com/DanilMochalov/KimLiPack.git
    cd projectname
 
 2. Установите зависимости:
