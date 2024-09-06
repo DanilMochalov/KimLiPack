@@ -12,12 +12,13 @@
    git clone https://github.com/username/projectname.git
    cd projectname
 2. Установить зависимости:
+   ```bash
 npm install
-
 3. Запустить проект в режиме разработки:
+   ```bash
 npm start
-
 4. Для сборки проекта:
+   ```bash
 npm run build
 
 
@@ -26,9 +27,11 @@ npm run build
 ## Ветвление и совместная разработка
 
 main — стабильная ветка для деплоя и продакшен версии проекта.
+```bash
 dev — основная ветка для разработки. Все изменения вносим через Pull Request в эту ветку.
+```bash
 feature/[название-фичи] — для каждой новой фичи создавай отдельную ветку.
-
+```bash
 Чтобы создать новую ветку:
 git checkout -b feature/название-фичи
 
