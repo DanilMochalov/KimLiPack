@@ -18,6 +18,14 @@ module.exports = {
         use: 'babel-loader',
       },
       {
+        test: /\.scss$/,
+        use: [
+          'style-loader', // Вставляет стили в DOM
+          'css-loader',   // Преобразует CSS в CommonJS
+          'sass-loader'   // Компилирует SCSS в CSS
+        ],
+      },
+      {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
