@@ -1,46 +1,46 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #ddd;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: #f8f9fa;
+	border-bottom: 1px solid #ddd;
 }
 
 .logo img {
-    width: 100px; 
-    cursor: pointer;
+	width: 100px;
+	cursor: pointer;
 }
 
 .menu {
-    display: flex;
-    gap: 20px; 
+	display: flex;
+	gap: 20px;
 }
 
 .menu-item {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 5px;
-    transition: color 0.3s ease;
+	text-decoration: none;
+	color: #333;
+	font-size: 16px;
+	font-weight: 500;
+	padding: 5px;
+	transition: color 0.3s ease;
 
-    &:hover {
-        color: #007bff;
-    }
+	&:hover {
+		color: #007bff;
+	}
 }
 
 .order-button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 4px;
+	transition: background-color 0.3s ease;
 
-    &:hover {
-        background-color: #0056b3;
-    }
+	&:hover {
+		background-color: #0056b3;
+	}
 }
