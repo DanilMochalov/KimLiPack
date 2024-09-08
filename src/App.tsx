@@ -7,7 +7,7 @@ import Blog from './pages/Blog'
 import Footer from './components/Footer'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import TermsOfService from './pages/TermsOfService'
-import 'normalize.css';
+import 'normalize.css'
 
 const App = () => {
 	return (

@@ -1,0 +1,139 @@
+.HomePage {
+	padding: 20px;
+	background-color: #f4f4f4;
+
+	.greeting {
+		text-align: center;
+		margin-bottom: 30px;
+
+		h2 {
+			font-size: 32px;
+			color: #333;
+		}
+
+		p {
+			font-size: 18px;
+			color: #666;
+		}
+	}
+
+	.about {
+		display: flex;
+		gap: 20px;
+		margin-bottom: 40px;
+
+		.img {
+			width: 50%;
+			height: 300px;
+			background-color: #ccc;
+		}
+
+		.info {
+			width: 50%;
+			h2 {
+				font-size: 28px;
+				color: #333;
+				margin-bottom: 10px;
+			}
+
+			p {
+				font-size: 16px;
+				color: #666;
+				margin-bottom: 20px;
+			}
+
+			ul {
+				list-style: none;
+				padding: 0;
+
+				li {
+					display: flex;
+					align-items: center;
+					margin-bottom: 10px;
+
+					img {
+						width: 20px;
+						height: 20px;
+						margin-right: 10px;
+					}
+
+					span {
+						font-size: 16px;
+						color: #333;
+					}
+				}
+			}
+		}
+	}
+
+	.reviews {
+		margin-bottom: 40px;
+		display: flex;
+		justify-content: space-between;
+		gap: 10px;
+		overflow-x: auto;
+	}
+
+	.window_line {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		gap: 10px;
+	}
+
+	.buy_car {
+		text-align: center;
+		margin-bottom: 40px;
+
+		p {
+			font-size: 20px;
+			color: #333;
+		}
+
+		.button_buy {
+			background-color: #ff5c5c;
+			color: white;
+			border: none;
+			padding: 10px 20px;
+			font-size: 16px;
+			cursor: pointer;
+			display: inline-flex;
+			align-items: center;
+
+			img {
+				margin-left: 10px;
+				width: 16px;
+				height: 16px;
+			}
+
+			&:hover {
+				background-color: #ff3a3a;
+			}
+		}
+	}
+
+	.blog {
+		text-align: center;
+
+		button {
+			background-color: #ff5c5c;
+			color: white;
+			border: none;
+			padding: 10px 20px;
+			font-size: 16px;
+			cursor: pointer;
+			display: inline-flex;
+			align-items: center;
+
+			img {
+				margin-left: 10px;
+				width: 16px;
+				height: 16px;
+			}
+
+			&:hover {
+				background-color: #ff3a3a;
+			}
+		}
+	}
+}
