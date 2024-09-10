@@ -4,10 +4,10 @@
 	.retro-effect {
 		position: relative;
 		overflow: hidden;
-	  }
-	  
-	  .retro-effect::before {
-		content: "";
+	}
+
+	.retro-effect::before {
+		content: '';
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -17,23 +17,22 @@
 		opacity: 0.1;
 		pointer-events: none;
 		z-index: 3;
-	  }
-	  
-	  .retro-effect * {
-		position: relative;
+	}
+
+	.retro-effect * {
 		z-index: 2;
-	  }
-	  
+	}
+
 	.greeting {
 		position: relative;
 		text-align: center;
 		color: #fff;
-	
+
 		.greating_img {
 			position: relative;
 			padding-top: 100px;
-			padding-bottom: 570px;
-	
+			padding-bottom: 600px;
+
 			.video-background {
 				position: absolute;
 				top: 0;
@@ -42,24 +41,46 @@
 				height: 100%;
 				object-fit: cover;
 			}
-	
-			h2, p {
+
+			h2 {
+				margin-top: 250px;
 				position: relative;
-				z-index: 1;
+				z-index: 3;
+				font-size: 35px;
+				opacity: 0;
+				animation: fadeIn 1.5s ease-in-out forwards;
+			}
+
+			p {
+				font-size: 22px;
+				position: relative;
+				z-index: 3;
+				opacity: 0;
+				animation: fadeIn 1.5s ease-in-out forwards;
+				animation-delay: 1s; 
 			}
 		}
 	}
-	
+
+	@keyframes fadeIn {
+		from {
+			opacity: 0;
+			transform: translateY(20px); 
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0); 
+		}
+	}
 
 	.about {
 		display: flex;
 		gap: 20px;
-		background-color: #254E58;
-		
+		background-color: #254e58;
 
 		.img {
 			width: 50%;
-			height: 300px;
+			height: 600px;
 			background-color: #ccc;
 			background-image: url(../assets/img/img_2.png);
 			background-size: cover;
@@ -69,34 +90,36 @@
 		.info {
 			width: 50%;
 			h2 {
-				font-size: 28px;
-				color: #333;
-				margin-bottom: 10px;
+				font-size: 58px;
+				color: #ffffff;
+				margin-top: 65px;
+				margin-left: 65px;
 			}
 
 			p {
 				margin: 25px;
-				font-size: 16px;
-				color: #666;
-				margin-bottom: 20px;
+				font-size: 26px;
+				color: #fcfcfc;
+				margin-top: 75px;
 			}
 
 			ul {
 				list-style: none;
 				padding: 0;
 				display: flex;
-				gap: 75px;
-				margin-left: 20px;
+				gap: 150px;
+				margin-left: 90px;
+				margin-top: 70px;
+				font-size: 20px;
 
 				li {
 					display: flex;
 					align-items: center;
-					margin-bottom: 10px;
+					margin-bottom: 20px;
+					color: #f4f4f4;
 
-					img {
-						width: 20px;
-						height: 20px;
-						margin-right: 10px;
+					svg {
+						margin-right: 15px;
 					}
 
 					span {
@@ -109,27 +132,25 @@
 	}
 
 	.reviews {
-		display: flex;
-		justify-content: space-between;
-		gap: 10px;
-		overflow-x: auto;
-		background-color: #4F4A41;
-	}
-
-	.window_line {
-		display: flex;
-		flex-wrap: nowrap;
-		justify-content: space-between;
-		gap: 10px;
-		margin-left: 30px;
+		background-color: #4f4a41;
+		height: 320px;
+		padding-top: 90px;
+		padding-left: 75px;
 	}
 
 	.buy_car {
-		text-align: center;
-
+		height: 500px;
+		background-image: url(../assets/img/background_catalog.png);
 		p {
-			font-size: 20px;
-			color: #333;
+			margin: 0;
+			padding: 0;
+			font-style: none;
+			font-size: 43px;
+			font-weight: 200;
+			color: #fffbfb;
+			padding-top: 155px;
+			padding-bottom: 35px;
+			margin-left: 70px;
 		}
 
 		.button_buy {
@@ -137,11 +158,12 @@
 			color: white;
 			border: none;
 			padding: 10px 20px;
-			font-size: 16px;
+			font-size: 22px;
 			cursor: pointer;
 			display: inline-flex;
+			gap: 15px;
 			align-items: center;
-
+			margin-left: 75px;
 			img {
 				margin-left: 10px;
 				width: 16px;
@@ -155,32 +177,33 @@
 	}
 
 	.blog {
+		background-color: #254e58;
+		height: 470px;
+		padding-top: 15px;
+		padding-left: 75px;
 		text-align: center;
-		background-color: #254E58;
 
-		.news_line {
-			display: flex;
-			flex-wrap: nowrap;
-			justify-content: space-between;
-			gap: 10px;
-			margin-left: 30px;
+		.sliderbar {
+			text-align: center;
 		}
 
-		button {
+		p {
+			font-size: 36px;
+			color: #ffffff;
+			text-align: center;
+		}
+
+		.button_link {
 			background-color: #ff5c5c;
 			color: white;
 			border: none;
 			padding: 10px 20px;
-			font-size: 16px;
+			font-size: 22px;
 			cursor: pointer;
 			display: inline-flex;
+			gap: 15px;
 			align-items: center;
-
-			img {
-				margin-left: 10px;
-				width: 16px;
-				height: 16px;
-			}
+			margin-top: 65px;
 
 			&:hover {
 				background-color: #ff3a3a;

@@ -1,12 +1,11 @@
-.CarouselWindow {
+.carousel-window {
+	position: relative;
 	background-color: #000;
 	border: 2px solid black;
 	border-radius: 5px;
 	width: 100%;
 	max-width: 300px;
 	height: 200px;
-	position: relative;
-	overflow: hidden;
 	cursor: pointer;
 
 	img {
@@ -26,7 +25,24 @@
 		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 	}
 
-	&:hover {
-		filter: brightness(1.1);
+	.controls {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		display: flex;
+		justify-content: space-between;
+		transform: translateY(-50%);
+
+		button {
+			background: rgba(0, 0, 0, 0.5);
+			color: white;
+			border: none;
+			padding: 5px 10px;
+			cursor: pointer;
+			&:hover {
+				background: rgba(0, 0, 0, 0.7);
+			}
+		}
 	}
 }
